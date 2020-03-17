@@ -20,13 +20,14 @@ def get_all_stats():
 @app.route('/c/<country_name>', methods=['GET'])
 def get_country_stats(country_name: str):
     country_name = country_name.strip().capitalize()
+    return_buffer: Dict = {}
     data: List = get_table_data()
     for stat in data:
-        try:
-            if stat[country_name]:
-                return jsonify(stat[country_name])
-        except KeyError as i:
-            abort(404)
+        if stat.get(country_name):
+            return jsonify(stat.get(country_name))
+        else:
+            continue
+    abort(404) # if no record found abort with 404
 
 @app.errorhandler(404)
 def not_found(error):
