@@ -1,5 +1,6 @@
 #  novel_covid-19_tracker
 A basic api & client(In Progress) for tracking developing cases and other stats of the new new coronavirus (COVID-19, SARS-CoV-2).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ff996e81-c4a8-43ec-8c90-0dc492dcd2de/deploy-status)](https://app.netlify.com/sites/covd/deploys)
 
 ## Endpoints
 Base Url is [https://novelcovid-19-tracker.herokuapp.com/](https://novelcovid-19-tracker.herokuapp.com/).
