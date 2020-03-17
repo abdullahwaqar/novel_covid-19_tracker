@@ -23,7 +23,7 @@ def get_table_data() -> List:
             'new_deaths': cols[4],
             'total_recovered': cols[5],
             'active_cases': cols[6],
-            'serious/critical': cols[7]
+            'serious_critical': cols[7]
         }
         data.append(stats)
     return data

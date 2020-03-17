@@ -2,6 +2,10 @@ body {
     font-family: Verdana, Arial, 'sans-serif';
 }
 
+.full-h {
+    height: 100vh;
+}
+
 #loader {
     display: block;
 }

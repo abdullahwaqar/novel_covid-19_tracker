@@ -18,8 +18,8 @@
         </div>
     </header>
     <center>
-    <main class="siimple--bg-dark">
-        <div class="siimple-content siimple-content--large">
+    <main class="siimple--bg-dark full-h">
+        <div class="siimple-content siimple-content--extra-large">
             <div class="siimple-grid">
                 <div class="siimple-grid-row">
                     <div class="siimple-grid-col siimple-grid-col--4">
@@ -52,12 +52,83 @@
                 </div>
             </div>
             <hr>
-
+            <label class="siimple-label siimple--color-light">Country:</label>
+            <br>
+            <select id="country-selector" class="siimple-select"></select>
+            <hr>
+            <label id="country-label" class="siimple-label siimple--color-light"></label><br>
+            <div class="siimple-grid">
+                <div class="siimple-grid-row">
+                    <div class="siimple-grid-col siimple-grid-col--4">
+                        <div class="siimple-box">
+                            <div id="active-loader" class="siimple-spinner siimple-spinner--dark siimple-spinner--small"></div>
+                            <div id="global-data">
+                                <div class="siimple-h6">Active Cases</div>
+                                <div id="active-coronavirus-cases-no" class="siimple-box-subtitle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="siimple-grid-col siimple-grid-col--4">
+                        <div class="siimple-box">
+                            <div id="active-loader" class="siimple-spinner siimple-spinner--dark siimple-spinner--small"></div>
+                            <div id="global-data">
+                                <div class="siimple-h6">New Cases</div>
+                                <div id="new-cases" class="siimple-box-subtitle siimple--color-warning"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="siimple-grid-col siimple-grid-col--4">
+                        <div class="siimple-box">
+                            <div id="active-loader" class="siimple-spinner siimple-spinner--dark siimple-spinner--small"></div>
+                            <div id="global-data">
+                                <div class="siimple-h6">New Deaths</div>
+                                <div id="new-deaths" class="siimple-box-subtitle siimple--color-error"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="siimple-grid-col siimple-grid-col--4">
+                        <div class="siimple-box">
+                            <div id="active-loader" class="siimple-spinner siimple-spinner--dark siimple-spinner--small"></div>
+                            <div id="global-data">
+                                <div class="siimple-h6">Serious/Critical</div>
+                                <div id="serious-critical" class="siimple-box-subtitle siimple--color-warning"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="siimple-grid-col siimple-grid-col--4">
+                        <div class="siimple-box">
+                            <div id="active-loader" class="siimple-spinner siimple-spinner--dark siimple-spinner--small"></div>
+                            <div id="global-data">
+                                <div class="siimple-h6">Total Cases</div>
+                                <div id="total-cases" class="siimple-box-subtitle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="siimple-grid-col siimple-grid-col--4">
+                        <div class="siimple-box">
+                            <div id="active-loader" class="siimple-spinner siimple-spinner--dark siimple-spinner--small"></div>
+                            <div id="global-data">
+                                <div class="siimple-h6">Total Death</div>
+                                <div id="total-deaths" class="siimple-box-subtitle siimple--color-error"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="siimple-grid-col siimple-grid-col--4">
+                        <div class="siimple-box">
+                            <div id="active-loader" class="siimple-spinner siimple-spinner--dark siimple-spinner--small"></div>
+                            <div id="global-data">
+                                <div class="siimple-h6">Total Recovered</div>
+                                <div id="total-recovery" class="siimple-box-subtitle siimple--color-success"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         </main>
     </center>
     <footer>
-        <div class="siimple-footer siimple-footer--dark" align="center">
+        <div class="siimple-footer siimple-footer--light" align="center">
             Made by <strong><a href="https://github.com/abdullahwaqar/novel_covid-19_tracker">abdullah</a></strong>
         </div>
     </footer>
