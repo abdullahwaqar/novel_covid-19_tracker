@@ -14,4 +14,4 @@ Base Url is [https://novelcovid-19-tracker.herokuapp.com/](https://novelcovid-19
 - [Worldometer](https://www.worldometers.info/coronavirus/)
 
 ## Term of Use
-The data is available to the public. Reliance on the Website for medical guidance or use of the Website in commerce is strictly prohibited.
+The data is available to the public. Reliance on the Website for medical guidance or use of the Website in commercial is strictly prohibited.
