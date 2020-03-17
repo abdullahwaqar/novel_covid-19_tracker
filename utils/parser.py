@@ -6,7 +6,7 @@ def get_data():
     response = requests.get('https://www.worldometers.info/coronavirus/')
     return response.text
 
-def get_table_data():
+def get_table_data() -> List:
     data: List = []
     soup = bs4(get_data(), 'html.parser')
     table = soup.find('table', id='main_table_countries')
@@ -28,5 +28,19 @@ def get_table_data():
         data.append(stats)
     return data
 
+def get_global_stats() -> Dict:
+    data: List = []
+    soup = bs4(get_data(), 'html.parser')
+    stats = soup.find_all('div', 'maincounter-number')
+    for stat in stats:
+        data.append(stat.find('span').string)
+    global_stats: Dict = {
+        'coronavirus_cases': data[0],
+        'deaths': data[1],
+        'recovered': data[2]
+    }
+    return global_stats
+
 if __name__ == "__main__":
     get_table_data()
+    get_global_stats()
