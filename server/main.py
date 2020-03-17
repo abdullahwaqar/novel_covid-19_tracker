@@ -1,9 +1,11 @@
 #!flask/bin/python
 from typing import List
+from flask_cors import CORS
 from flask import Flask, jsonify, abort, make_response
 from utils import get_global_stats, get_table_data
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/', methods=['GET'])
 def index():
