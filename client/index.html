@@ -5,17 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple@3.3.1/dist/siimple.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>novel_covid-19_tracker</title>
+    <title>Covid-19 Tracker | Global Stats.</title>
 </head>
 <body>
     <header>
-        <div class="siimple-navbar siimple-navbar--dark siimple-navbar--fluid">
-            <center>
-                <div class="siimple-navbar-title">novel_covid-19_tracker</div>
-            </center>
+        <div class="siimple-navbar siimple-navbar--dark siimple-navbar--large">
+            <div class="siimple-navbar-title">
+                Covid-19 Tracker | Global Stats.
+                <hr>
+                <span class="pulse"></span>
+            </div>
         </div>
     </header>
-    <main></main>
+    <center>
+    <main class="siimple--bg-dark">
+        <div class="siimple-content siimple-content--large">
+            <div class="siimple-grid">
+                <div class="siimple-grid-row">
+                    <div class="siimple-grid-col siimple-grid-col--4">
+                        <div class="siimple-box">
+                            <div id="loader" class="siimple-spinner siimple-spinner--dark siimple-spinner--small"></div>
+                            <div id="global-data">
+                                <div class="siimple-h6">Coronavirus Cases</div>
+                                <div id="coronavirus-cases-no" class="siimple-box-subtitle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="siimple-grid-col siimple-grid-col--4">
+                        <div class="siimple-box">
+                            <div id="loader" class="siimple-spinner siimple-spinner--dark siimple-spinner--small"></div>
+                            <div id="global-data">
+                                <div class="siimple-h6">Total Deaths</div>
+                                <div id="global-deaths" class="siimple-box-subtitle siimple--color-error"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="siimple-grid-col siimple-grid-col--4">
+                        <div class="siimple-box">
+                            <div id="loader" class="siimple-spinner siimple-spinner--dark siimple-spinner--small"></div>
+                            <div id="global-data">
+                                <div class="siimple-h6">Recovered</div>
+                                <div id="global-recovery" class="siimple-box-subtitle siimple--color-success"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+        </div>
+        </main>
+    </center>
     <footer>
         <div class="siimple-footer siimple-footer--dark" align="center">
             Made by <strong><a href="https://github.com/abdullahwaqar/novel_covid-19_tracker">abdullah</a></strong>
