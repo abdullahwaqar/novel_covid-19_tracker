@@ -103,7 +103,6 @@ async function getCountryStat(countryName) {
 }
 
 function setCountryStat(name, data) {
-    console.log(data)
     const capatalize =s =>s.replace(/./, m => m.toUpperCase());
     countryLabel.innerHTML = `Stats for: ${capatalize(name)}`;
     activeCoronavirusCasesNo.innerHTML = data.active_cases || 'Null';
