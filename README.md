@@ -1,6 +1,8 @@
 #  novel_covid-19_tracker
 A basic api & client for tracking developing cases and other stats of the new new coronavirus (COVID-19, SARS-CoV-2).
 
+| Contributions are welcome, fork away.
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ff996e81-c4a8-43ec-8c90-0dc492dcd2de/deploy-status)](https://app.netlify.com/sites/covd/deploys)
 
 ## Endpoints
