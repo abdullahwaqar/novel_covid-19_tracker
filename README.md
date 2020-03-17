@@ -1,5 +1,5 @@
 #  novel_covid-19_tracker
-A basic api & client for tracking developing cases and other stats of the new new coronavirus (COVID-19, SARS-CoV-2).
+A basic api & client for tracking developing cases and other stats of the new coronavirus (COVID-19, SARS-CoV-2).
 
 | Contributions are welcome, fork away.
 
